@@ -5,4 +5,4 @@
 天　　　瘦　人　昏　秋<br />
 涯　　　马　家　鸦　思<br />
 
-![](https://visitor-badge.glitch.me/badge?page_id=afc163.afc163)
+![](https://visitor-badge.glitch.me/badge?page_id=zpr1g.zpr1g)
