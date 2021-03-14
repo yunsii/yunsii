@@ -5,8 +5,6 @@
 - 💬 Ask me about **React, TypeScript and Node**
 - 😃 Moreover: I'm always looking for something to do
 
-<img align="right" width="256" src="https://github-readme-stats.vercel.app/api?username=theprimone&custom_title=Yuns's Github Stats&theme=graywhite&hide_rank=true&hide_border=true"/>
-
 📊 **This week I spent my time on**
 
 <!--START_SECTION:waka-->
@@ -18,3 +16,7 @@ Markdown     19 mins         ▒░░░░░░░░░░░░░░░░
 JSON         15 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.84 % 
 ```
 <!--END_SECTION:waka-->
+
+<p>
+<img align="left" width="432" src="https://github-readme-stats.vercel.app/api?username=theprimone&custom_title=Yuns's Github Stats&theme=graywhite"/> <img align="left" width="320" src="https://github-readme-stats.vercel.app/api/top-langs/?username=theprimone&layout=compact&theme=graywhite&hide_border=true"/>
+</p>
