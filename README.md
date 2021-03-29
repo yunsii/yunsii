@@ -5,12 +5,10 @@
 - 💬 Ask me about **React, TypeScript and Node**
 - 😃 Moreover: I'm always looking for something to do
 
-📊 **This week I spent my time on**
+📊 **Weekly development breakdown**
 
 <!--START_SECTION:waka-->
 ```text
-Week: 21 March, 2021 - 28 March, 2021
-
 TypeScript   23 hrs 33 mins  ████████████████▓░░░░░░░░   67.12 % 
 JSON         6 hrs 17 mins   ████▒░░░░░░░░░░░░░░░░░░░░   17.94 % 
 Markdown     1 hr 19 mins    █░░░░░░░░░░░░░░░░░░░░░░░░   03.79 % 
