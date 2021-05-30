@@ -1,7 +1,9 @@
 <h2 align="center">👋 Hello! I'm 云深.</h2>
 
+<div align="center"><a href="https://stackoverflow.com/users/8335317/theprimone">@Stack Overflow</a> <a href="https://juejin.cn/user/2752832849055864">@掘金</a></div>
+
 - 🛠 I’m currently working on **A Platform for DevOps in Shenzhen**
-- 🚀 I’m currently learning **Vite and Browser Extension**
+- 🚀 I’m currently learning **Minimax algorithm, Vite and Browser Extension**
 - 💬 Ask me about **React, TypeScript and Node**
 - 😃 Moreover: I'm always looking for something to do
 
