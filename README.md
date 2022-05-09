@@ -12,7 +12,8 @@
 <!--START_SECTION:waka-->
 
 ```text
-Markdown   0 secs          █████████████████████████   100.00 %
+Markdown   0 secs          ██████████████████████▓░░   91.30 %
+Rust       0 secs          ██▒░░░░░░░░░░░░░░░░░░░░░░   08.70 %
 ```
 
 <!--END_SECTION:waka-->
