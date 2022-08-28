@@ -22,11 +22,8 @@ Other        7 mins          ▒░░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
-<p>
-<img align="left" width="450" src="https://github-readme-stats.vercel.app/api?username=yunsii&custom_title=Yuns's Github Stats&theme=graywhite&hide_border=true&disable_animations=true"/> <img align="left" width="330" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yunsii&layout=compact&theme=graywhite&hide_border=true"/>
-</p>
-
-<br clear="left" />
+<!--START_SECTION:stats-->
+<!--END_SECTION:stats-->
 
 <br />
 
