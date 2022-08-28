@@ -25,6 +25,15 @@ Other        7 mins          ▒░░░░░░░░░░░░░░░░
 ✨ **Github Stats**
 
 <!--START_SECTION:stats-->
+
+```text
+Total Stars Earned     : 578
+Total Commits (2022)   : 432
+Total PRs              : 43
+Total Issues           : 94
+Contributed to         : 24
+```
+
 <!--END_SECTION:stats-->
 
 <br />
