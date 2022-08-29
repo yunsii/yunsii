@@ -2,6 +2,8 @@ name: Stats Readme
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 21 */2 * *"
 
 jobs:
   update-readme:
