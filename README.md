@@ -27,11 +27,11 @@ Other        16 mins         ▒░░░░░░░░░░░░░░░░
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     578
-Total Commits (2022)   433
-Total PRs              43
-Total Issues           94
-Contributed to         24
+Total Stars Earned     578                    
+Total Commits (2022)   435                     ╔═╗    
+Total PRs              43                      ╠═╣ ═╬═
+Total Issues           95                      ╩ ╩    
+Contributed to         24                     
 ```
 
 <!--END_SECTION:stats-->
