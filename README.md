@@ -22,7 +22,7 @@ Other        16 mins         ▒░░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
-✨ **Github Stats**
+✨ **GitHub Stats**
 
 <!--START_SECTION:stats-->
 
