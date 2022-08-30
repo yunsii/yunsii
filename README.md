@@ -36,6 +36,11 @@ Contributed to         24
 
 <!--END_SECTION:stats-->
 
+📝 Most Used Languages
+
+<!--START_SECTION:stats:langs-->
+<!--END_SECTION:stats:langs-->
+
 <br />
 
 <p>
