@@ -24,8 +24,8 @@ Other        3 mins          ⣿⣿⣿⣿⣿⣿⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 Total Stars Earned     585                
 Total Commits (2022)   459                 ╔═╗    
 Total PRs              43                  ╠═╣ ═╬═
-Total Issues           96                  ╩ ╩    
-Contributed to         23                 
+Total Issues           97                  ╩ ╩    
+Contributed to         24                 
 ```
 
 <!--END_SECTION:stats-->
