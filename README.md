@@ -25,8 +25,8 @@ Git          3 mins          ⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     593                
-Total Commits (2022)   457                 ╔═╗    
+Total Stars Earned     595                
+Total Commits (2022)   461                 ╔═╗    
 Total PRs              44                  ╠═╣ ═╬═
 Total Issues           98                  ╩ ╩    
 Contributed to         24                 
@@ -41,8 +41,8 @@ Contributed to         24
 ```text
 TypeScript   59.29%   >>>>>>>>>>>>>>>----------
 JavaScript   21.04%   >>>>>--------------------
-Less         15.30%   >>>>---------------------
-Python       1.37%    -------------------------
+Less         15.29%   >>>>---------------------
+Python       1.36%    -------------------------
 CSS          1.11%    -------------------------
 ```
 
