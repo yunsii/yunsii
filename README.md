@@ -26,7 +26,7 @@ Git          4 mins          ⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     595                
-Total Commits (2022)   461                 ╔═╗    
+Total Commits (2022)   469                 ╔═╗    
 Total PRs              44                  ╠═╣ ═╬═
 Total Issues           98                  ╩ ╩    
 Contributed to         24                 
@@ -39,11 +39,11 @@ Contributed to         24
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   59.29%   >>>>>>>>>>>>>>>----------
-JavaScript   21.04%   >>>>>--------------------
-Less         15.29%   >>>>---------------------
-Python       1.36%    -------------------------
-CSS          1.11%    -------------------------
+TypeScript   49.32%   >>>>>>>>>>>>-------------
+JavaScript   17.50%   >>>>---------------------
+PowerShell   16.81%   >>>>---------------------
+Less         12.72%   >>>----------------------
+Python       1.14%    -------------------------
 ```
 
 <!--END_SECTION:stats:langs-->
