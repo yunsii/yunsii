@@ -24,7 +24,7 @@ Other        4 mins          ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     614                
-Total Commits (2022)   427                 ╔═╗    
+Total Commits (2022)   424                 ╔═╗    
 Total PRs              44                  ╠═╣ ═╬═
 Total Issues           101                 ╩ ╩    
 Contributed to         24                 
@@ -38,10 +38,10 @@ Contributed to         24
 
 ```text
 TypeScript   59.25%   >>>>>>>>>>>>>>>----------
-JavaScript   21.03%   >>>>>--------------------
-Less         15.28%   >>>>---------------------
+JavaScript   21.00%   >>>>>--------------------
+Less         15.26%   >>>>---------------------
 Python       1.36%    -------------------------
-CSS          1.11%    -------------------------
+CSS          1.16%    -------------------------
 ```
 
 <!--END_SECTION:stats:langs-->
