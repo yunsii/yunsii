@@ -29,7 +29,7 @@ Contributed to         20
 
 <!--END_SECTION:stats-->
 
-📝 Most Used Languages
+📝 **Most Used Languages**
 
 <!--START_SECTION:stats:langs-->
 
