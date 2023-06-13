@@ -10,8 +10,7 @@
 <!--START_SECTION:waka-->
 
 ```txt
-Markdown   13 mins         ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶   98.97 %
-Git        0 secs          ⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀   01.03 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
