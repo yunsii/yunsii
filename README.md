@@ -25,7 +25,7 @@ CSS          10 mins         ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     675                
-Total Commits (2023)   172                 ╔═╗    
+Total Commits (2023)   169                 ╔═╗    
 Total PRs              45                  ╠═╣ ═╬═
 Total Issues           113                 ╩ ╩    
 Contributed to         22                 
