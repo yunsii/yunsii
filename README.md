@@ -1,11 +1,11 @@
-<h2 align="center">👋 Hello! I'm 云深.</h2>
+<h2 align="center"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand%20Medium-Light%20Skin%20Tone.png" alt="Waving Hand Medium-Light Skin Tone" height="30" /> Hello! I'm 云深.</h2>
 
-- 🛠 I’m currently working on **A Platform for SAAS in Shenzhen**
-- 🚀 I’m currently learning **SVG, Vite, React and TypeScript**
-- 💬 Ask me about **React, TypeScript and Node**
-- 😃 Moreover: I'm always looking for something to do
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Hammer%20and%20Wrench.png" alt="Hammer and Wrench" height="24" /> I’m currently working on **A Platform for SAAS in Shenzhen**
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" alt="Rocket" height="24" /> I’m currently learning **Vite, React and TypeScript**
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Speech%20Balloon.png" alt="Speech Balloon" height="24" /> Ask me about **React, TypeScript and Node**
+- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Grinning%20Face%20with%20Smiling%20Eyes.png" alt="Grinning Face with Smiling Eyes" height="24" /> Moreover: I'm always looking for something to do
 
-📊 **Weekly development breakdown**
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" alt="Bar Chart" height="24" /> **Weekly development breakdown**
 
 <!--START_SECTION:waka-->
 
@@ -19,7 +19,7 @@ Git          6 mins          ⣶⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 <!--END_SECTION:waka-->
 
-✨ **GitHub Stats**
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Sparkles.png" alt="Sparkles" height="24" /> **GitHub Stats**
 
 <!--START_SECTION:stats-->
 
@@ -33,7 +33,7 @@ Contributed to         24
 
 <!--END_SECTION:stats-->
 
-📝 **Most Used Languages**
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Memo.png" alt="Memo" height="24" /> **Most Used Languages**
 
 <!--START_SECTION:stats:langs-->
 
