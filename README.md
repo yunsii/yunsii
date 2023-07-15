@@ -25,7 +25,7 @@ JavaScript   57 mins         ⣿⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     682                
-Total Commits (2023)   328                 ╔═╗    
+Total Commits (2023)   346                 ╔═╗    
 Total PRs              47                  ╠═╣ ═╬═
 Total Issues           116                 ╩ ╩    
 Contributed to         25                 
@@ -38,11 +38,11 @@ Contributed to         25
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   59.97%   >>>>>>>>>>>>>>>----------
-JavaScript   20.59%   >>>>>--------------------
-Less         14.96%   >>>>---------------------
-Python       1.34%    -------------------------
-CSS          1.14%    -------------------------
+TypeScript   59.34%   >>>>>>>>>>>>>>>----------
+JavaScript   20.32%   >>>>>--------------------
+Less         14.75%   >>>>---------------------
+Python       1.32%    -------------------------
+MDX          1.17%    -------------------------
 ```
 
 <!--END_SECTION:stats:langs-->
