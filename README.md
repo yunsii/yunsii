@@ -25,9 +25,9 @@ MDX          1 hr 3 mins     ⣷⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     685                
-Total Commits (2023)   365                 ╔═╗    
+Total Commits (2023)   407                 ╔═╗    
 Total PRs              49                  ╠═╣ ═╬═
-Total Issues           116                 ╩ ╩    
+Total Issues           118                 ╩ ╩    
 Contributed to         25                 
 ```
 
@@ -38,11 +38,11 @@ Contributed to         25
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   59.47%   >>>>>>>>>>>>>>>----------
-JavaScript   20.10%   >>>>>--------------------
-Less         14.74%   >>>>---------------------
-Python       1.32%    -------------------------
-MDX          1.26%    -------------------------
+TypeScript   59.54%   >>>>>>>>>>>>>>>----------
+JavaScript   19.99%   >>>>>--------------------
+Less         14.68%   >>>>---------------------
+Python       1.31%    -------------------------
+MDX          1.25%    -------------------------
 ```
 
 <!--END_SECTION:stats:langs-->
