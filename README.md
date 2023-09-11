@@ -25,7 +25,7 @@ CSS               10 mins         ⣿⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 
 ```text
 Total Stars Earned     712                
-Total Commits (2023)   561                 ╔═╗    
+Total Commits (2023)   554                 ╔═╗    
 Total PRs              58                  ╠═╣ ═╬═
 Total Issues           135                 ╩ ╩    
 Contributed to         34                 
@@ -38,7 +38,7 @@ Contributed to         34
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   59.83%   >>>>>>>>>>>>>>>----------
+TypeScript   59.84%   >>>>>>>>>>>>>>>----------
 JavaScript   19.18%   >>>>>--------------------
 Less         13.99%   >>>----------------------
 HTML         1.57%    -------------------------
