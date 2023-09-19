@@ -24,8 +24,8 @@ Ezhil          1 hr 27 mins    ⣿⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     718                
-Total Commits (2023)   592                 ╔═╗    
+Total Stars Earned     719                
+Total Commits (2023)   597                 ╔═╗    
 Total PRs              59                  ╠═╣ ═╬═
 Total Issues           138                 ╩ ╩    
 Contributed to         36                 
@@ -38,9 +38,9 @@ Contributed to         36
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   60.25%   >>>>>>>>>>>>>>>----------
-JavaScript   18.96%   >>>>>--------------------
-Less         13.81%   >>>----------------------
+TypeScript   60.32%   >>>>>>>>>>>>>>>----------
+JavaScript   18.93%   >>>>>--------------------
+Less         13.79%   >>>----------------------
 HTML         1.58%    -------------------------
 MDX          1.54%    -------------------------
 ```
