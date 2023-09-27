@@ -24,8 +24,8 @@ JSON           21 mins         ⣿⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     724                
-Total Commits (2023)   600                 ╔═╗    
+Total Stars Earned     726                
+Total Commits (2023)   621                 ╔═╗    
 Total PRs              59                  ╠═╣ ═╬═
 Total Issues           139                 ╩ ╩    
 Contributed to         36                 
@@ -38,10 +38,10 @@ Contributed to         36
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   60.42%   >>>>>>>>>>>>>>>----------
-JavaScript   18.87%   >>>>>--------------------
-Less         13.75%   >>>----------------------
-HTML         1.58%    -------------------------
+TypeScript   60.47%   >>>>>>>>>>>>>>>----------
+JavaScript   18.85%   >>>>>--------------------
+Less         13.73%   >>>----------------------
+HTML         1.59%    -------------------------
 MDX          1.53%    -------------------------
 ```
 
