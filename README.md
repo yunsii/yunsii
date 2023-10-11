@@ -24,8 +24,8 @@ ActionScript 3   1 min           ⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     728                
-Total Commits (2023)   633                 ╔═╗    
+Total Stars Earned     731                
+Total Commits (2023)   636                 ╔═╗    
 Total PRs              59                  ╠═╣ ═╬═
 Total Issues           139                 ╩ ╩    
 Contributed to         36                 
@@ -39,7 +39,7 @@ Contributed to         36
 
 ```text
 TypeScript   60.47%   >>>>>>>>>>>>>>>----------
-JavaScript   18.85%   >>>>>--------------------
+JavaScript   18.84%   >>>>>--------------------
 Less         13.73%   >>>----------------------
 HTML         1.59%    -------------------------
 MDX          1.53%    -------------------------
