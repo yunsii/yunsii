@@ -24,8 +24,8 @@ TSConfig         10 mins         ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     731                
-Total Commits (2023)   645                 ╔═╗    
+Total Stars Earned     733                
+Total Commits (2023)   664                 ╔═╗    
 Total PRs              60                  ╠═╣ ═╬═
 Total Issues           139                 ╩ ╩    
 Contributed to         36                 
@@ -38,11 +38,11 @@ Contributed to         36
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   60.57%   >>>>>>>>>>>>>>>----------
-JavaScript   18.79%   >>>>>--------------------
-Less         13.69%   >>>----------------------
-HTML         1.59%    -------------------------
-MDX          1.53%    -------------------------
+TypeScript   60.43%   >>>>>>>>>>>>>>>----------
+JavaScript   18.71%   >>>>>--------------------
+Less         13.63%   >>>----------------------
+HTML         1.61%    -------------------------
+MDX          1.52%    -------------------------
 ```
 
 <!--END_SECTION:stats:langs-->
