@@ -24,8 +24,8 @@ YAML         1 min           ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     752                
-Total Commits (2023)   754                 ╔═╗    
+Total Stars Earned     753                
+Total Commits (2023)   759                 ╔═╗    
 Total PRs              61                  ╠═╣ ═╬═
 Total Issues           151                 ╩ ╩    
 Contributed to         33                 
@@ -38,10 +38,10 @@ Contributed to         33
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   60.99%   >>>>>>>>>>>>>>>----------
-JavaScript   18.28%   >>>>>--------------------
-Less         13.27%   >>>----------------------
-CSS          1.72%    -------------------------
+TypeScript   60.87%   >>>>>>>>>>>>>>>----------
+JavaScript   18.23%   >>>>>--------------------
+Less         13.23%   >>>----------------------
+CSS          1.94%    -------------------------
 HTML         1.57%    -------------------------
 ```
 
