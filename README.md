@@ -25,7 +25,7 @@ Lua          41 mins         ⣷⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     756                
-Total Commits (2024)   819                 ╔═╗    
+Total Commits (2024)   824                 ╔═╗    
 Total PRs              61                  ╠═╣ ═╬═
 Total Issues           157                 ╩ ╩    
 Contributed to         35                 
@@ -38,8 +38,8 @@ Contributed to         35
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   60.93%   >>>>>>>>>>>>>>>----------
-JavaScript   18.16%   >>>>>--------------------
+TypeScript   60.94%   >>>>>>>>>>>>>>>----------
+JavaScript   18.15%   >>>>>--------------------
 Less         13.18%   >>>----------------------
 CSS          2.00%    -------------------------
 HTML         1.58%    -------------------------
