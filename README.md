@@ -49,7 +49,7 @@ HTML         1.58%    -------------------------
 
 ❤️ **My Skills**
 
-[![My Skills](https://skillicons.dev/icons?i=nodejs,js,html,css,wasm,nextjs,vite,webpack,electron,react,svg,ts,git,regex,sass,md,workers,vscode,linux,vim,github,jenkins,stackoverflow,codepen,figma,py,java&theme=light)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nodejs,js,html,css,wasm,nextjs,vite,webpack,electron,react,astro,svg,ts,git,regex,sass,md,workers,vscode,linux,vim,github,jenkins,stackoverflow,codepen,figma,py,java&theme=light)](https://skillicons.dev)
 
 <br />
 
