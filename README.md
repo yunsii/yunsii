@@ -24,11 +24,11 @@ CSS          17 mins         ⣷⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     781                 
-Total Commits (2024)   1026                 ╔═╗    
-Total PRs              73                   ╠═╣ ═╬═
-Total Issues           176                  ╩ ╩    
-Contributed to         41                  
+Total Stars Earned     783                
+Total Commits (2024)   898                 ╔═╗    
+Total PRs              73                  ╠═╣ ═╬═
+Total Issues           178                 ╩ ╩    
+Contributed to         42                 
 ```
 
 <!--END_SECTION:stats-->
@@ -38,9 +38,9 @@ Contributed to         41
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   60.97%   >>>>>>>>>>>>>>>----------
-JavaScript   18.14%   >>>>>--------------------
-Less         13.17%   >>>----------------------
+TypeScript   61.02%   >>>>>>>>>>>>>>>----------
+JavaScript   18.12%   >>>>>--------------------
+Less         13.15%   >>>----------------------
 CSS          2.00%    -------------------------
 HTML         1.58%    -------------------------
 ```
