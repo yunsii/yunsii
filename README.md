@@ -24,11 +24,11 @@ Other        4 mins          ⣦⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     807                
-Total Commits (2024)   995                 ╔═╗    
-Total PRs              77                  ╠═╣ ═╬═
-Total Issues           186                 ╩ ╩    
-Contributed to         40                 
+Total Stars Earned     807                 
+Total Commits (2024)   1003                 ╔═╗    
+Total PRs              77                   ╠═╣ ═╬═
+Total Issues           186                  ╩ ╩    
+Contributed to         39                  
 ```
 
 <!--END_SECTION:stats-->
@@ -38,10 +38,10 @@ Contributed to         40
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   61.02%   >>>>>>>>>>>>>>>----------
-JavaScript   18.12%   >>>>>--------------------
-Less         13.15%   >>>----------------------
-CSS          2.00%    -------------------------
+TypeScript   61.06%   >>>>>>>>>>>>>>>----------
+JavaScript   18.10%   >>>>>--------------------
+Less         13.14%   >>>----------------------
+CSS          1.99%    -------------------------
 HTML         1.58%    -------------------------
 ```
 
