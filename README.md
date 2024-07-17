@@ -25,10 +25,10 @@ INI          0 secs          ⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     813                
-Total Commits (2024)   960                 ╔═╗    
+Total Commits (2024)   928                 ╔═╗    
 Total PRs              77                  ╠═╣ ═╬═
 Total Issues           188                 ╩ ╩    
-Contributed to         38                 
+Contributed to         37                 
 ```
 
 <!--END_SECTION:stats-->
