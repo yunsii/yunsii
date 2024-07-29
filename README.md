@@ -25,7 +25,7 @@ Markdown     4 mins          ⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned     813                
-Total Commits (2024)   905                 ╔═╗    
+Total Commits (2024)   914                 ╔═╗    
 Total PRs              78                  ╠═╣ ═╬═
 Total Issues           190                 ╩ ╩    
 Contributed to         36                 
@@ -38,11 +38,11 @@ Contributed to         36
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   61.09%   >>>>>>>>>>>>>>>----------
-JavaScript   18.09%   >>>>>--------------------
-Less         13.13%   >>>----------------------
+TypeScript   61.13%   >>>>>>>>>>>>>>>----------
+JavaScript   18.07%   >>>>>--------------------
+Less         13.11%   >>>----------------------
 CSS          1.99%    -------------------------
-HTML         1.58%    -------------------------
+HTML         1.57%    -------------------------
 ```
 
 <!--END_SECTION:stats:langs-->
