@@ -20,11 +20,11 @@ No activity tracked
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     814                
-Total Commits (2024)   860                 ╔═╗    
+Total Stars Earned     815                
+Total Commits (2024)   862                 ╔═╗    
 Total PRs              78                  ╠═╣ ═╬═
 Total Issues           190                 ╩ ╩    
-Contributed to         34                 
+Contributed to         33                 
 ```
 
 <!--END_SECTION:stats-->
@@ -34,7 +34,7 @@ Contributed to         34
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   61.13%   >>>>>>>>>>>>>>>----------
+TypeScript   61.14%   >>>>>>>>>>>>>>>----------
 JavaScript   18.07%   >>>>>--------------------
 Less         13.11%   >>>----------------------
 CSS          1.99%    -------------------------
