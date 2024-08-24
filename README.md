@@ -1,8 +1,8 @@
 <h2 align="center">👋 Hello! I'm Yuns.</h2>
 
 - 🛠 I’m currently working on **A Platform for SAAS in Shenzhen**
-- 🚀 I’m currently learning **Vite, React and TypeScript**
-- 💬 Ask me about **React, TypeScript and Node**
+- 🚀 I’m currently learning **AST, ESLint and TypeScript**
+- 💬 Ask me about **React, Vite, Next.js and TypeScript**
 - 😃 Moreover: I'm always looking for something to do
 
 📊 **Weekly development breakdown**
