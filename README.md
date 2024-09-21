@@ -24,8 +24,8 @@ Git          5 mins          ⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned     829                
-Total Commits (2024)   767                 ╔═╗    
+Total Stars Earned     830                
+Total Commits (2024)   788                 ╔═╗    
 Total PRs              84                  ╠═╣ ═╬═
 Total Issues           199                 ╩ ╩    
 Contributed to         29                 
@@ -38,9 +38,9 @@ Contributed to         29
 <!--START_SECTION:stats:langs-->
 
 ```text
-TypeScript   61.15%   >>>>>>>>>>>>>>>----------
-JavaScript   18.07%   >>>>>--------------------
-Less         13.11%   >>>----------------------
+TypeScript   61.20%   >>>>>>>>>>>>>>>----------
+JavaScript   18.05%   >>>>>--------------------
+Less         13.09%   >>>----------------------
 CSS          1.99%    -------------------------
 HTML         1.58%    -------------------------
 ```
