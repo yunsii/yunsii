@@ -25,8 +25,8 @@ Git          6 mins          ⣷⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 
 ```text
 Total Stars Earned      862
-Total Commits           4213
-Total Commits (2024)    693                  ╔═╗
+Total Commits           4212
+Total Commits (2024)    690                  ╔═╗
 Total PRs               84                   ╠═╣
 Total Issues            201                  ╩ ╩
 Contributed to (2024)   26
