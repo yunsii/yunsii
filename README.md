@@ -22,7 +22,7 @@ Markdown   1 hr 23 mins    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿�
 ```text
 Total Stars Earned      871
 Total Commits           4221
-Total Commits (2025)    613                  ╔═╗
+Total Commits (2025)    567                  ╔═╗
 Total PRs               84                   ╠═╣
 Total Issues            202                  ╩ ╩
 Contributed to (2025)   26
