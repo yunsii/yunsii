@@ -22,7 +22,7 @@ No activity tracked
 ```text
 Total Stars Earned      872
 Total Commits           4223
-Total Commits (2025)    525                  ╔═╗
+Total Commits (2025)    522                  ╔═╗
 Total PRs               84                   ╠═╣
 Total Issues            202                  ╩ ╩
 Contributed to (2025)   26
