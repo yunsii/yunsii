@@ -21,10 +21,10 @@ TypeScript   2 mins          ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
 ```text
 Total Stars Earned      880
-Total Commits           4288
-Total Commits (2025)    466                  ╔═╗
+Total Commits           4284
+Total Commits (2025)    465                  ╔═╗
 Total PRs               87                   ╠═╣
-Total Issues            203                  ╩ ╩
+Total Issues            204                  ╩ ╩
 Contributed to (2025)   24
 ```
 
