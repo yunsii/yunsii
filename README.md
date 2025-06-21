@@ -29,7 +29,7 @@ Total Commits           4330
 Total Commits (2025)    374                  ╔═╗
 Total PRs               90                   ╠═╣
 Total Issues            208                  ╩ ╩
-Contributed to (2025)   20
+Contributed to (2025)   19
 ```
 
 <!--END_SECTION:stats-->
