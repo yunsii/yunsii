@@ -26,10 +26,10 @@ Git          0 secs          ⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 ```text
 Total Stars Earned      889
 Total Commits           4330
-Total Commits (2025)    374                  ╔═╗
+Total Commits (2025)    350                  ╔═╗
 Total PRs               90                   ╠═╣
 Total Issues            208                  ╩ ╩
-Contributed to (2025)   19
+Contributed to (2025)   18
 ```
 
 <!--END_SECTION:stats-->
