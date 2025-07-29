@@ -26,7 +26,7 @@ JavaScript   3 mins          ⣤⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 ```text
 Total Stars Earned      896
 Total Commits           4355
-Total Commits (2025)    321                  ╔═╗
+Total Commits (2025)    314                  ╔═╗
 Total PRs               90                   ╠═╣
 Total Issues            209                  ╩ ╩
 Contributed to (2025)   17
