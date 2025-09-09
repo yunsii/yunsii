@@ -26,10 +26,10 @@ YAML          24 mins         ⣶⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀�
 ```text
 Total Stars Earned      901
 Total Commits           4440
-Total Commits (2025)    307                  ╔═╗
+Total Commits (2025)    295                  ╔═╗
 Total PRs               91                   ╠═╣
 Total Issues            218                  ╩ ╩
-Contributed to (2025)   15
+Contributed to (2025)   14
 ```
 
 <!--END_SECTION:stats-->
