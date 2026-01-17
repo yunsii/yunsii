@@ -27,7 +27,7 @@ JSON         20 mins         ⣿⣶⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀
 Total Stars Earned      917
 Total Commits           4619
 Total Commits (2026)    303                  ╔═╗
-Total PRs               97                   ╠═╣
+Total PRs               98                   ╠═╣
 Total Issues            222                  ╩ ╩
 Contributed to (2026)   16
 ```
