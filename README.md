@@ -20,12 +20,12 @@ No activity tracked
 <!--START_SECTION:stats-->
 
 ```text
-Total Stars Earned      920
+Total Stars Earned      919
 Total Commits           4631
 Total Commits (2026)    279                  ╔═╗
 Total PRs               98                   ╠═╣
 Total Issues            224                  ╩ ╩
-Contributed to (2026)   16
+Contributed to (2026)   15
 ```
 
 <!--END_SECTION:stats-->
