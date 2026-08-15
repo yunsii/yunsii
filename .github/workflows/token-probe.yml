@@ -1,0 +1,76 @@
+name: Token Probe (temporary)
+
+# 临时探针：用默认 GITHUB_TOKEN 逐字段测试跨仓库 GraphQL 访问边界。
+# 纯只读，不写任何数据。定位完根因后即可删除本文件。
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    name: Probe GITHUB_TOKEN scope
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const login = 'yunsii'
+
+            const probes = [
+              ['01 user 基本字段',
+               `{ user(login:"${login}"){ login name } }`],
+              ['02 user.followers',
+               `{ user(login:"${login}"){ followers { totalCount } } }`],
+              ['03 user.contributionsCollection',
+               `{ user(login:"${login}"){ contributionsCollection { totalCommitContributions totalPullRequestReviewContributions } } }`],
+              ['04 user.pullRequests / issues',
+               `{ user(login:"${login}"){ pullRequests(first:1){totalCount} openIssues: issues(states:OPEN){totalCount} } }`],
+              ['05 user.repositoriesContributedTo',
+               `{ user(login:"${login}"){ repositoriesContributedTo(first:1, contributionTypes:[COMMIT,ISSUE,PULL_REQUEST,REPOSITORY]){ totalCount } } }`],
+              ['06 user.repositories 仅 totalCount',
+               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ totalCount } } }`],
+              ['07 user.repositories nodes.name',
+               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ nodes { name } } } }`],
+              ['08 user.repositories nodes.stargazers{totalCount}  <- 疑点A',
+               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ nodes { name stargazers { totalCount } } } } }`],
+              ['09 user.repositories nodes.stargazerCount 标量  <- 替代方案',
+               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ nodes { name stargazerCount } } } }`],
+              ['10 user.repositories nodes.languages  <- 疑点B',
+               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER, isFork:false){ nodes { name languages(first:3, orderBy:{field:SIZE,direction:DESC}){ edges { size node { name color } } } } } } }`],
+              ['11 orderBy STARGAZERS 排序  <- 疑点C',
+               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER, orderBy:{direction:DESC, field:STARGAZERS}){ nodes { name } } } }`],
+              ['12 直接点名另一个自己的公开仓库',
+               `{ repository(owner:"${login}", name:"stats-readme"){ name stargazerCount stargazers{totalCount} languages(first:3){edges{size node{name}}} } }`],
+              ['13 当前仓库自身（对照组，应当成功）',
+               `{ repository(owner:"${login}", name:"${login}"){ name stargazerCount } }`],
+            ]
+
+            let firstFailure = null
+
+            for (const [label, query] of probes) {
+              try {
+                const data = await github.graphql(query)
+                core.info(`✅ ${label}\n   ${JSON.stringify(data)}`)
+              } catch (e) {
+                const errs = e.errors || []
+                core.info(`❌ ${label}`)
+                core.info(`   错误数: ${errs.length}`)
+                // 打印前 3 条错误的完整结构（含 path / type），这是定位根因的关键
+                for (const err of errs.slice(0, 3)) {
+                  core.info(`   ${JSON.stringify({ type: err.type, path: err.path, message: err.message })}`)
+                }
+                if (e.data) core.info(`   部分数据: ${JSON.stringify(e.data).slice(0, 300)}`)
+                if (!firstFailure) firstFailure = label
+              }
+            }
+
+            // REST 对照
+            try {
+              const r = await github.rest.search.commits({ q: `author:${login}`, per_page: 1 })
+              core.info(`✅ 14 REST search/commits  total_count=${r.data.total_count}`)
+            } catch (e) {
+              core.info(`❌ 14 REST search/commits  ${e.status} ${e.message}`)
+            }
+
+            core.info(`\n===== 首个失败项: ${firstFailure ?? '无，全部通过'} =====`)
