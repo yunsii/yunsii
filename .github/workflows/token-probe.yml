@@ -1,14 +1,15 @@
 name: Token Probe (temporary)
 
-# 临时探针：用默认 GITHUB_TOKEN 逐字段测试跨仓库 GraphQL 访问边界。
-# 纯只读，不写任何数据。定位完根因后即可删除本文件。
+# 临时探针 第二轮：验证「把 stargazers{totalCount} 换成 stargazerCount」后，
+# stats-readme 的两个完整查询能否在默认 GITHUB_TOKEN 下跑通。
+# 纯只读。验证完即删。
 
 on:
   workflow_dispatch:
 
 jobs:
   probe:
-    name: Probe GITHUB_TOKEN scope
+    name: Verify fixed queries
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v7
@@ -17,60 +18,91 @@ jobs:
           script: |
             const login = 'yunsii'
 
-            const probes = [
-              ['01 user 基本字段',
-               `{ user(login:"${login}"){ login name } }`],
-              ['02 user.followers',
-               `{ user(login:"${login}"){ followers { totalCount } } }`],
-              ['03 user.contributionsCollection',
-               `{ user(login:"${login}"){ contributionsCollection { totalCommitContributions totalPullRequestReviewContributions } } }`],
-              ['04 user.pullRequests / issues',
-               `{ user(login:"${login}"){ pullRequests(first:1){totalCount} openIssues: issues(states:OPEN){totalCount} } }`],
-              ['05 user.repositoriesContributedTo',
-               `{ user(login:"${login}"){ repositoriesContributedTo(first:1, contributionTypes:[COMMIT,ISSUE,PULL_REQUEST,REPOSITORY]){ totalCount } } }`],
-              ['06 user.repositories 仅 totalCount',
-               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ totalCount } } }`],
-              ['07 user.repositories nodes.name',
-               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ nodes { name } } } }`],
-              ['08 user.repositories nodes.stargazers{totalCount}  <- 疑点A',
-               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ nodes { name stargazers { totalCount } } } } }`],
-              ['09 user.repositories nodes.stargazerCount 标量  <- 替代方案',
-               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER){ nodes { name stargazerCount } } } }`],
-              ['10 user.repositories nodes.languages  <- 疑点B',
-               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER, isFork:false){ nodes { name languages(first:3, orderBy:{field:SIZE,direction:DESC}){ edges { size node { name color } } } } } } }`],
-              ['11 orderBy STARGAZERS 排序  <- 疑点C',
-               `{ user(login:"${login}"){ repositories(first:5, ownerAffiliations:OWNER, orderBy:{direction:DESC, field:STARGAZERS}){ nodes { name } } } }`],
-              ['12 直接点名另一个自己的公开仓库',
-               `{ repository(owner:"${login}", name:"stats-readme"){ name stargazerCount stargazers{totalCount} languages(first:3){edges{size node{name}}} } }`],
-              ['13 当前仓库自身（对照组，应当成功）',
-               `{ repository(owner:"${login}", name:"${login}"){ name stargazerCount } }`],
-            ]
-
-            let firstFailure = null
-
-            for (const [label, query] of probes) {
-              try {
-                const data = await github.graphql(query)
-                core.info(`✅ ${label}\n   ${JSON.stringify(data)}`)
-              } catch (e) {
-                const errs = e.errors || []
-                core.info(`❌ ${label}`)
-                core.info(`   错误数: ${errs.length}`)
-                // 打印前 3 条错误的完整结构（含 path / type），这是定位根因的关键
-                for (const err of errs.slice(0, 3)) {
-                  core.info(`   ${JSON.stringify({ type: err.type, path: err.path, message: err.message })}`)
+            // ---- 修复版 user-stats 查询：stargazers{totalCount} -> stargazerCount ----
+            const userStatsQuery = `
+              query userInfo($login: String!) {
+                user(login: $login) {
+                  name
+                  login
+                  contributionsCollection {
+                    totalCommitContributions
+                    totalPullRequestReviewContributions
+                  }
+                  repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
+                    totalCount
+                  }
+                  pullRequests(first: 1) { totalCount }
+                  openIssues: issues(states: OPEN) { totalCount }
+                  closedIssues: issues(states: CLOSED) { totalCount }
+                  followers { totalCount }
+                  repositories(first: 100, ownerAffiliations: OWNER, orderBy: {direction: DESC, field: STARGAZERS}) {
+                    totalCount
+                    nodes { stargazerCount }
+                  }
                 }
-                if (e.data) core.info(`   部分数据: ${JSON.stringify(e.data).slice(0, 300)}`)
-                if (!firstFailure) firstFailure = label
+              }`
+
+            // ---- top-languages 查询：原样，未改 ----
+            const topLangsQuery = `
+              query userInfo($login: String!) {
+                user(login: $login) {
+                  repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+                    nodes {
+                      name
+                      languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+                        edges { size node { color name } }
+                      }
+                    }
+                  }
+                }
+              }`
+
+            let ok = true
+
+            try {
+              const d = await github.graphql(userStatsQuery, { login })
+              const u = d.user
+              const totalStars = u.repositories.nodes.reduce((p, c) => p + c.stargazerCount, 0)
+              core.info('✅ 修复版 user-stats 查询通过')
+              core.info(`   name=${u.name} repos=${u.repositories.totalCount} followers=${u.followers.totalCount}`)
+              core.info(`   commits(1y)=${u.contributionsCollection.totalCommitContributions} PRs=${u.pullRequests.totalCount}`)
+              core.info(`   issues=${u.openIssues.totalCount + u.closedIssues.totalCount} contributedTo=${u.repositoriesContributedTo.totalCount}`)
+              core.info(`   >>> Total Stars Earned = ${totalStars}   (README 里应显示这个数)`)
+              core.info(`   返回节点数=${u.repositories.nodes.length}`)
+            } catch (e) {
+              ok = false
+              core.info(`❌ 修复版 user-stats 失败: 错误数=${(e.errors||[]).length}`)
+              for (const err of (e.errors||[]).slice(0,3)) {
+                core.info(`   ${JSON.stringify({type: err.type, path: err.path, message: err.message})}`)
               }
             }
 
-            // REST 对照
             try {
-              const r = await github.rest.search.commits({ q: `author:${login}`, per_page: 1 })
-              core.info(`✅ 14 REST search/commits  total_count=${r.data.total_count}`)
+              const d = await github.graphql(topLangsQuery, { login })
+              const nodes = d.user.repositories.nodes
+              const withLang = nodes.filter(n => n.languages.edges.length > 0)
+              const agg = {}
+              for (const n of withLang) for (const e of n.languages.edges) {
+                agg[e.node.name] = (agg[e.node.name] || 0) + e.size
+              }
+              const top = Object.entries(agg).sort((a,b) => b[1]-a[1]).slice(0,5)
+              core.info('✅ top-languages 查询通过（未改动）')
+              core.info(`   仓库数=${nodes.length} 含语言的=${withLang.length}`)
+              core.info(`   >>> Top 5: ${top.map(([k,v]) => `${k}(${v})`).join(', ')}`)
             } catch (e) {
-              core.info(`❌ 14 REST search/commits  ${e.status} ${e.message}`)
+              ok = false
+              core.info(`❌ top-languages 失败: 错误数=${(e.errors||[]).length}`)
+              for (const err of (e.errors||[]).slice(0,3)) {
+                core.info(`   ${JSON.stringify({type: err.type, path: err.path, message: err.message})}`)
+              }
             }
 
-            core.info(`\n===== 首个失败项: ${firstFailure ?? '无，全部通过'} =====`)
+            try {
+              const r = await github.rest.search.commits({ q: `author:${login}`, per_page: 1 })
+              core.info(`✅ REST search/commits  >>> Total Commits = ${r.data.total_count}`)
+            } catch (e) {
+              ok = false
+              core.info(`❌ REST search/commits  ${e.status} ${e.message}`)
+            }
+
+            core.info(`\n===== 修复方案${ok ? '完全可行：无需任何 PAT' : '仍有问题'} =====`)
